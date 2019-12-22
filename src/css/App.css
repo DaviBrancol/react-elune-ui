@@ -70,6 +70,7 @@ ol {
   align-items: center;
   justify-content: flex-start;
   padding: 20px;
+  margin-bottom: 5px;
 }
 
 .eln-sidebar .eln-sidebar-header img {
@@ -88,10 +89,18 @@ ol {
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
+  opacity: 0.7;
+  color: #555;
+  user-select: none;
 }
 
 .eln-navitem:hover {
   cursor: pointer;
+  opacity: 1;
+}
+
+.eln-navitem.active {
+  opacity: 1;
 }
 
 .eln-navitem .eln-navitem-container {
@@ -100,14 +109,14 @@ ol {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 7.5px 15px;
+  padding: 0px 15px;
   box-sizing: border-box;
 }
 
 .eln-navitem .eln-navitem-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .eln-navitem .eln-navitem-content i {
@@ -120,10 +129,11 @@ ol {
   margin-left: 15px;
 }
 
-.eln-navitem > .eln-navitem {
-  padding-left: 15px;
+.eln-navitem .eln-navitem-collapse i {
+  font-size: 10px;
 }
 
-.eln-navitem > .eln-navitem > .eln-navitem {
-  padding-left: 22.5px;
+.eln-navitem > .eln-navitem .eln-navitem-content {
+  padding-left: 20px;
+  width: 240px;
 }

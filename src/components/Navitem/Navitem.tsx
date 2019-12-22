@@ -2,30 +2,38 @@ import React from 'react'
 import { withRouter } from 'react-router-dom'
 import { RouteComponentProps } from 'react-router'
 import * as classNames from 'classnames'
+import { INavItem } from '../../interfaces'
+import { useSidebar } from '../../context'
 
-interface NavItemProps {
-  title: string
-  icon?: string
-  path: string
-}
-
-const Card: RouteComponentProps<NavItemProps> = ({
+const NavItem: RouteComponentProps<INavItem> = ({
+  layer,
+  index,
   title,
   icon,
   path,
   history,
   location,
-  children,
-  ...props
+  submenu,
+  children
 }) => {
-  console.log(location.pathname)
-  console.log(path)
+  const isActive: boolean = location.pathname === path
+  const hasChildren: boolean = children
+
+  const sidebar: any = useSidebar()
+
   return (
     <div
       className={classNames('eln-navitem', {
-        active: location.pathname === path
+        active: isActive
       })}
-      onClick={() => history.push(path)}
+      onClick={
+        !hasChildren
+          ? () => history.push(path)
+          : e => {
+              e.stopPropagation()
+              sidebar.setOpenLayer(layer, index)
+            }
+      }
     >
       <div className="eln-navitem-container">
         <div className="eln-navitem-content">
@@ -38,9 +46,9 @@ const Card: RouteComponentProps<NavItemProps> = ({
           </div>
         )}
       </div>
-      {children}
+      {sidebar.openLayer[layer] === index && children}
     </div>
   )
 }
 
-export default withRouter(Card)
+export default withRouter(NavItem)

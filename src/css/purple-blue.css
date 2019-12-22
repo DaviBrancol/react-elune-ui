@@ -34,3 +34,14 @@ body {
 .eln-navitem-container:hover .eln-navitem-collapse i {
   color: #7d2d88;
 }
+
+.eln-navitem.active > .eln-navitem-container {
+  background-color: rgba(125, 45, 136, 0.15);
+  border-right: 4px solid #7d2d88;
+}
+
+.eln-navitem.active > .eln-navitem-container .eln-navitem-content i,
+.eln-navitem.active > .eln-navitem-container .eln-navitem-content p,
+.eln-navitem.active > .eln-navitem-container .eln-navitem-collapse i {
+  color: #7d2d88;
+}
