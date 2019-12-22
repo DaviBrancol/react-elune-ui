@@ -1,0 +1,45 @@
+/*
+  ---------------- React Elune UI Css ---------------
+
+  -------------- All rights reserved for ------------
+
+  --- Davi Duarte Gomes - Designer / UI Developer ---
+*/
+
+/* 
+
+  Summary
+
+  1. General CSS
+
+*/
+
+html {
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #dedede;
+  font-family: 'Rubik', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: 'Rubik', sans-serif;
+}
+
+.application {
+  display: flex;
+  background-color: #dedede;
+  min-height: 100vh;
+}
