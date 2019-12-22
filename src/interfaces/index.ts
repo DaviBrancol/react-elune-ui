@@ -1,1 +1,8 @@
-export { default as INavItem } from './INavItem'
+export interface INavItem {
+  layer: number
+  index: number
+  title: string
+  icon?: string
+  path?: string
+  submenu?: Array<INavItem>
+}
