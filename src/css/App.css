@@ -129,11 +129,27 @@ ol {
   margin-left: 15px;
 }
 
-.eln-navitem .eln-navitem-collapse i {
+.eln-navitem .eln-navitem-container .eln-navitem-collapse i {
   font-size: 10px;
+  transition: transform 0.2s linear;
 }
 
-.eln-navitem > .eln-navitem .eln-navitem-content {
+.eln-navitem > .eln-navitem-children {
+  height: 0;
+  display: none;
+  width: 100%;
+}
+
+.eln-navitem.open > .eln-navitem-children {
+  height: auto;
+  display: block;
+}
+
+.eln-navitem .eln-navitem .eln-navitem-content {
   padding-left: 20px;
   width: 240px;
+}
+
+.eln-navitem.open > .eln-navitem-container .eln-navitem-collapse i {
+  transform: rotate(90deg);
 }

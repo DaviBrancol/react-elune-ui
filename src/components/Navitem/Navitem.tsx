@@ -24,7 +24,8 @@ const NavItem: RouteComponentProps<INavItem> = ({
   return (
     <div
       className={classNames('eln-navitem', {
-        active: isActive
+        active: isActive,
+        open: sidebar.openLayer[layer] === index
       })}
       onClick={
         !hasChildren
@@ -42,11 +43,11 @@ const NavItem: RouteComponentProps<INavItem> = ({
         </div>
         {children && (
           <div className="eln-navitem-collapse">
-            <i className="fa fa-chevron-down" />
+            <i className="fa fa-chevron-right" />
           </div>
         )}
       </div>
-      {sidebar.openLayer[layer] === index && children}
+      <div className="eln-navitem-children">{children}</div>
     </div>
   )
 }

@@ -33,6 +33,12 @@ const menu: Array<IMenu> = [
             path: '/cards/numbers'
           }
         ]
+      },
+      {
+        title: 'Dashboard'
+      },
+      {
+        title: 'Dashboard'
       }
     ]
   },
