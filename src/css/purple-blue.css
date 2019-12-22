@@ -1,6 +1,6 @@
 /*
   ---------------- React Elune UI Css ---------------
-  
+
   --------------- Purple / Blue Theme ---------------
 
   -------------- All rights reserved for ------------
@@ -13,9 +13,24 @@
   Summary
 
   1. General CSS
+  2. Sidebar
 
 */
 
 body {
   background-color: #dedede;
+}
+
+/* --------- 2. Sidebar --------- */
+
+.application.purple-blue .eln-sidebar .eln-sidebar-header {
+  background-color: #7d2d88;
+}
+
+/* --------- 2.1 Navitem --------- */
+
+.eln-navitem-container:hover .eln-navitem-content i,
+.eln-navitem-container:hover .eln-navitem-content p,
+.eln-navitem-container:hover .eln-navitem-collapse i {
+  color: #7d2d88;
 }

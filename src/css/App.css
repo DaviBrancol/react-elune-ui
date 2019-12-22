@@ -11,6 +11,8 @@
   Summary
 
   1. General CSS
+  2. Sidebar
+    2.1 Navitem
 
 */
 
@@ -38,8 +40,90 @@ a {
   font-family: 'Rubik', sans-serif;
 }
 
+div,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
 .application {
   display: flex;
   background-color: #dedede;
   min-height: 100vh;
+}
+
+/* --------- 2. Sidebar --------- */
+
+.eln-sidebar {
+  display: flex;
+  flex-direction: column;
+  min-width: 260px;
+  max-width: 260px;
+  width: 260px;
+  flex: 1 260px;
+  background-color: white;
+}
+
+.eln-sidebar .eln-sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.eln-sidebar .eln-sidebar-header img {
+  width: 50%;
+}
+
+.eln-sidebar .eln-sidebar-container {
+  margin-right: 1px solid #ccc;
+}
+
+/* --------- 2.1 Navitem --------- */
+
+.eln-navitem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.eln-navitem:hover {
+  cursor: pointer;
+}
+
+.eln-navitem .eln-navitem-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 7.5px 15px;
+  box-sizing: border-box;
+}
+
+.eln-navitem .eln-navitem-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.eln-navitem .eln-navitem-content i {
+  font-size: 16px;
+}
+
+.eln-navitem .eln-navitem-content p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 15px;
+}
+
+.eln-navitem > .eln-navitem {
+  padding-left: 15px;
+}
+
+.eln-navitem > .eln-navitem > .eln-navitem {
+  padding-left: 22.5px;
 }
