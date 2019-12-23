@@ -2,7 +2,12 @@ import React from 'react'
 import { Switch, Route, BrowserRouter } from 'react-router-dom'
 import { SidebarProvider } from './context'
 
-import { PageDashboard, PageBreadcrumb, PageCardSimple } from './pages'
+import {
+  PageDashboard,
+  PageBreadcrumb,
+  PageCardSimple,
+  PageGridSystem
+} from './pages'
 import Layout from './layout/Layout'
 
 const Routes = () => (
@@ -10,6 +15,7 @@ const Routes = () => (
     <BrowserRouter>
       <Switch>
         <Layout exact path="/" component={PageDashboard} />
+        <Layout exact path="/grid" component={PageGridSystem} />
         {/* Components*/}
         <Layout
           exact

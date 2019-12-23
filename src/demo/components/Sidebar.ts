@@ -12,6 +12,11 @@ const menu: Array<IMenu> = [
     path: '/'
   },
   {
+    title: 'Grid',
+    icon: 'fa fa-fw fa-th-large',
+    path: '/grid'
+  },
+  {
     title: 'Components',
     icon: 'fa fa-fw fa-folder',
     children: [

@@ -23,29 +23,23 @@ body {
   background-color: #dedede;
 }
 
-/* --------- 2. Sidebar --------- */
-
-.application.purple-blue .eln-sidebar .eln-sidebar-header {
-  background-color: #511d58;
-}
-
 /* --------- 2.1 Navitem --------- */
 
 .eln-navitem-container:hover .eln-navitem-content i,
 .eln-navitem-container:hover .eln-navitem-content p,
 .eln-navitem-container:hover .eln-navitem-collapse i {
-  color: #7d2d88;
+  color: white;
 }
 
 .eln-navitem.active > .eln-navitem-container {
-  background-color: rgba(125, 45, 136, 0.15);
-  border-right: 4px solid #7d2d88;
+  background-color: rgba(174, 22, 194, 0.45);
+  border-right: 6px solid #ae16c2;
 }
 
 .eln-navitem.active > .eln-navitem-container .eln-navitem-content i,
 .eln-navitem.active > .eln-navitem-container .eln-navitem-content p,
 .eln-navitem.active > .eln-navitem-container .eln-navitem-collapse i {
-  color: #7d2d88;
+  color: white;
 }
 
 /* --------- 3 Header --------- */

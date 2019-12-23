@@ -1,3 +1,15 @@
+export interface ITextHeader {
+  title: string
+}
+
+export interface IGridCol {
+  xs?: number
+  sm?: number
+  md?: number
+  lg?: number
+  xl?: number
+}
+
 export interface INavItem {
   layer: number
   index: number
