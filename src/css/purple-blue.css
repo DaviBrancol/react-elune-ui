@@ -33,7 +33,7 @@ body {
 
 .eln-navitem.active > .eln-navitem-container {
   background-color: rgba(174, 22, 194, 0.45);
-  border-right: 6px solid #ae16c2;
+  border-right: 6px solid #b35bb7;
 }
 
 .eln-navitem.active > .eln-navitem-container .eln-navitem-content i,
@@ -45,5 +45,5 @@ body {
 /* --------- 3 Header --------- */
 
 .eln-header {
-  background-color: #7d2d88;
+  background-color: #5977ac;
 }

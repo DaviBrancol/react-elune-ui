@@ -12,7 +12,9 @@
 
   General CSS
   
-  Grid System
+  Style Guide
+    Grid System
+    Color Pallete
   Sidebar
     Navitem
     Collapse
@@ -80,6 +82,10 @@ ol {
   justify-content: flex-start;
   align-items: center;
 }
+
+/* ---------------------------------
+   ---------- Style Guide ----------
+   --------------------------------- */
 
 /* --------- Grid System --------- */
 
@@ -229,6 +235,15 @@ ol {
     width: 100%;
     max-width: 100%;
   }
+}
+
+/* --------- Color Pallete --------- */
+
+.eln-color-pallete {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  font-weight: bold;
 }
 
 /* --------- Sidebar --------- */
@@ -468,14 +483,12 @@ ol {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.18);
-  background-color: white;
   border-radius: 5px;
-  padding: 0 15px;
   margin-bottom: 30px;
 }
 
 .eln-pageheader h2 {
+  color: #333;
   font-weight: bold;
   font-size: 24px;
 }
@@ -511,16 +524,15 @@ ol {
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.18);
   margin-bottom: 30px;
   border-radius: 5px;
-  padding: 15px;
   min-width: 33%;
 }
 
 .eln-card .eln-card-header {
-  min-height: 30px;
+  padding: 10px;
 }
 
 .eln-card .eln-card-header h2 {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 300;
   color: #555;
 }

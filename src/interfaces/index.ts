@@ -31,3 +31,13 @@ export interface IPageHeader {
 export interface IBreadcrumb {
   list: Array<string>
 }
+
+{
+  /* Color Pallete */
+}
+
+export interface IColorPallete {
+  grade: string
+  hex: string
+  whiteLabel: boolean
+}
