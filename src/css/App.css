@@ -13,6 +13,8 @@
   1. General CSS
   2. Sidebar
     2.1 Navitem
+    2.2 Collapse
+  3  Header
 
 */
 
@@ -51,6 +53,13 @@ ol {
   display: flex;
   background-color: #dedede;
   min-height: 100vh;
+  min-width: 100vw;
+}
+
+.eln-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 /* --------- 2. Sidebar --------- */
@@ -63,18 +72,23 @@ ol {
   width: 260px;
   flex: 1 260px;
   background-color: white;
+  transition: all 0.25s ease-in-out;
 }
 
 .eln-sidebar .eln-sidebar-header {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 20px;
-  margin-bottom: 5px;
+  max-height: 30px;
+  min-height: 30px;
 }
 
-.eln-sidebar .eln-sidebar-header img {
-  width: 50%;
+.eln-sidebar .eln-sidebar-header h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
 }
 
 .eln-sidebar .eln-sidebar-container {
@@ -111,6 +125,7 @@ ol {
   width: 100%;
   padding: 0px 15px;
   box-sizing: border-box;
+  transition: all 0.12s ease-in-out;
 }
 
 .eln-navitem .eln-navitem-content {
@@ -127,11 +142,16 @@ ol {
   font-size: 16px;
   font-weight: 300;
   margin-left: 15px;
+  transition: all 0.12s linear;
+}
+
+.eln-navitem .eln-navitem-container .eln-navitem-collapse {
+  transition: all 0.12s linear;
 }
 
 .eln-navitem .eln-navitem-container .eln-navitem-collapse i {
   font-size: 10px;
-  transition: transform 0.2s linear;
+  transition: transform 0.4s linear;
 }
 
 .eln-navitem > .eln-navitem-children {
@@ -152,4 +172,109 @@ ol {
 
 .eln-navitem.open > .eln-navitem-container .eln-navitem-collapse i {
   transform: rotate(90deg);
+}
+
+/* --------- 2.2 Collapse ------- */
+
+.eln-sidebar.collapsed {
+  min-width: 80px;
+  max-width: 80px;
+  width: 80px;
+}
+
+.eln-sidebar.collapsed .eln-navitem .eln-navitem-container {
+  padding: 0 30px;
+}
+
+.eln-sidebar.collapsed .eln-navitem .eln-navitem-content p {
+  opacity: 0;
+}
+
+.eln-sidebar.collapsed
+  .eln-navitem
+  .eln-navitem-container
+  .eln-navitem-collapse {
+  opacity: 0;
+}
+
+/* --------- 3 Header --------- */
+
+.eln-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+  max-height: 70px;
+}
+
+.eln-header .eln-header-sidebar-menu button {
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.eln-header .eln-header-sidebar-menu i {
+  color: white;
+  font-size: 26px;
+}
+
+.eln-header .eln-header-menu {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.eln-header .eln-header-menu button {
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+  margin-right: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.eln-header .eln-header-menu button i {
+  color: white;
+  font-size: 20px;
+}
+
+.eln-header .eln-header-menu button .eln-notification {
+  position: absolute;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  top: 0;
+  right: 0;
+  margin: 0;
+  background-color: #d32f2f;
+  padding: 2px;
+  border-radius: 20%;
+  transform: translate(25%, -50%);
+}
+
+.eln-header .eln-header-menu .eln-header-user {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.eln-header .eln-header-menu .eln-header-user img {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.eln-header .eln-header-menu .eln-header-user p {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
 }

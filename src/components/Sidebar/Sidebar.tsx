@@ -1,14 +1,17 @@
 import React from 'react'
 import NavItem from '../Navitem'
+import { useSidebar } from '../../context'
+import classNames from 'classnames'
 
 export default function Sidebar({ menu, ...props }) {
+  const sidebar: any = useSidebar()
+
   return (
-    <div className="eln-sidebar">
+    <div
+      className={classNames('eln-sidebar', { collapsed: sidebar.collapsed })}
+    >
       <div className="eln-sidebar-header">
-        <img
-          src="https://app.teza.com.br/img/teza_logo_white.png"
-          alt="Logo-Icon"
-        />
+        {sidebar.collapsed ? <h1>EUI</h1> : <h1>EluneUI</h1>}
       </div>
       <div className="eln-sidebar-container">
         <ul className="eln-sidebar-list">

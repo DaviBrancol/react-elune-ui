@@ -4,6 +4,7 @@ const SidebarContext = createContext(null)
 
 export function SidebarProvider(props) {
   const [openLayer, _setOpenLayer] = useState([-1, -1, -1])
+  const [collapsed, setCollapsed] = useState(false)
 
   const setOpenLayer = (layer, index) => {
     let next: number[] = openLayer.slice(0)
@@ -20,7 +21,9 @@ export function SidebarProvider(props) {
     <SidebarContext.Provider
       value={{
         openLayer,
-        setOpenLayer
+        setOpenLayer,
+        collapsed,
+        setCollapsed
       }}
       {...props}
     />
