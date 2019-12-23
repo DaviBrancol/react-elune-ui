@@ -2,11 +2,15 @@ import React from 'react'
 import { Switch, Route, BrowserRouter } from 'react-router-dom'
 import { SidebarProvider } from './context'
 
+import { PageDashboard, PageBreadcrumb, PageCardSimple } from './pages'
+
+// Style Guide
 import {
-  PageDashboard,
-  PageBreadcrumb,
-  PageCardSimple,
-  PageGridSystem
+  PageGridSystem,
+  PageTypography,
+  PageColorPallete,
+  PageShapes,
+  PageIcons
 } from './pages'
 import Layout from './layout/Layout'
 
@@ -15,7 +19,12 @@ const Routes = () => (
     <BrowserRouter>
       <Switch>
         <Layout exact path="/" component={PageDashboard} />
-        <Layout exact path="/grid" component={PageGridSystem} />
+        {/* Style Guide */}
+        <Layout exact path="/style/grid" component={PageGridSystem} />
+        <Layout exact path="/style/typography" component={PageTypography} />
+        <Layout exact path="/style/colors" component={PageColorPallete} />
+        <Layout exact path="/style/icons" component={PageIcons} />
+        <Layout exact path="/style/shapes" component={PageShapes} />
         {/* Components*/}
         <Layout
           exact

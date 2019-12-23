@@ -1,11 +1,14 @@
 import React, { FunctionComponent } from 'react'
-import { PageHeader, CardSimple, Row, Col, TextHeader } from '../components'
+import { PageHeader, CardSimple, Row, Col, TextHeader } from '../../components'
 
 export const PageGridSystem: FunctionComponent<any> = ({ ...props }) => {
   return (
     <div className="eln-page">
       <Col lg={12}>
-        <PageHeader title="Grid System" list={['Home', 'Grid System']} />
+        <PageHeader
+          title="Grid System"
+          list={['Home', 'Style Guide', 'Grid System']}
+        />
         <TextHeader title="Equal Length" />
         <Row>
           <Col lg={12}>
