@@ -1,3 +1,5 @@
 export { default as Sidebar } from './Sidebar'
 export { default as Navitem } from './Navitem'
 export { default as Header } from './Header'
+export { Breadcrumb } from './Breadcrumb'
+export { PageHeader } from './PageHeader'

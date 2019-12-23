@@ -12,6 +12,16 @@ const menu: Array<IMenu> = [
     path: '/'
   },
   {
+    title: 'Components',
+    icon: 'fa fa-fw fa-folder',
+    children: [
+      {
+        title: 'Breadcrumb',
+        path: '/components/breadcrumbs'
+      }
+    ]
+  },
+  {
     title: 'Cards',
     icon: 'fa fa-fw fa-credit-card',
     children: [
