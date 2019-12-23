@@ -1,2 +1,3 @@
-export { default as Dashboard } from './Dashboard/Dashboard'
-export { PageBreadcrumb } from './PageBreadcrumb/PageBreadcrumb'
+export { PageDashboard } from './PageDashboard'
+export { PageBreadcrumb } from './PageBreadcrumb'
+export { PageCardSimple } from './PageCardSimple'
