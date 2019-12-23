@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react'
-import { PageHeader } from '../../components'
+import { PageHeader } from '../components'
 
 export const PageBreadcrumb: FunctionComponent<any> = ({ ...props }) => {
   return (

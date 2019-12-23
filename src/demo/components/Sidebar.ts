@@ -16,18 +16,17 @@ const menu: Array<IMenu> = [
     icon: 'fa fa-fw fa-folder',
     children: [
       {
+        title: 'Cards',
+        children: [
+          {
+            title: 'Simple Card',
+            path: '/components/cards/simple'
+          }
+        ]
+      },
+      {
         title: 'Breadcrumb',
         path: '/components/breadcrumbs'
-      }
-    ]
-  },
-  {
-    title: 'Cards',
-    icon: 'fa fa-fw fa-credit-card',
-    children: [
-      {
-        title: 'Dashboard',
-        path: '/cards/numbers'
       }
     ]
   },
