@@ -7,6 +7,10 @@ export interface INavItem {
   submenu?: Array<INavItem>
 }
 
+export interface ICardSimple {
+  title: string
+}
+
 export interface IPageHeader {
   title: string
   list?: Array<string>

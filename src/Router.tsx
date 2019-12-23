@@ -2,7 +2,7 @@ import React from 'react'
 import { Switch, Route, BrowserRouter } from 'react-router-dom'
 import { SidebarProvider } from './context'
 
-import { PageDashboard, PageBreadcrumb } from './pages'
+import { PageDashboard, PageBreadcrumb, PageCardSimple } from './pages'
 import Layout from './layout/Layout'
 
 const Routes = () => (
@@ -19,7 +19,7 @@ const Routes = () => (
         <Layout
           exact
           path="/components/cards/simple"
-          component={PageBreadcrumb}
+          component={PageCardSimple}
         />
         <Route component={<div>Nothing Here for 404</div>} />
       </Switch>

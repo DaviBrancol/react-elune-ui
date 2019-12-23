@@ -10,13 +10,18 @@
 
   Summary
 
-  1. General CSS
-  2. Sidebar
-    2.1 Navitem
-    2.2 Collapse
-  3. Header
-  4. PageHeader
-  5. Breadcrumbs
+  General CSS
+  
+  Grid System
+  Sidebar
+    Navitem
+    Collapse
+  Components
+    Header
+    PageHeader
+    Breadcrumbs
+    Cards
+      CardSimple
 
 */
 
@@ -72,7 +77,35 @@ ol {
   align-items: center;
 }
 
-/* --------- 2. Sidebar --------- */
+/* --------- Grid System --------- */
+/* 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@media(min-width: 1600px) {
+  .col-xs
+}
+
+.col-lg-4 {
+  flex: 0 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+
+.col-sm-6 {
+  flex: 0 0 0 50%;
+  max-width: 50%;
+}
+
+.col-12 {
+  flex: 0 0 0 100%;
+  max-width: 100%;
+} */
+
+/* --------- Sidebar --------- */
 
 .eln-sidebar {
   display: flex;
