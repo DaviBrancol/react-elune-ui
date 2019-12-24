@@ -23,6 +23,11 @@ export interface ICardSimple {
   title: string
 }
 
+export interface IColorCard {
+  title: string
+  hex: string
+}
+
 export interface IPageHeader {
   title: string
   list?: Array<string>

@@ -15,6 +15,7 @@
   Style Guide
     Grid System
     Color Pallete
+    Color Card
   Sidebar
     Navitem
     Collapse
@@ -242,7 +243,53 @@ ol {
 .eln-color-pallete {
   display: flex;
   justify-content: space-between;
-  padding: 0 15px;
+  align-items: center;
+}
+
+.eln-color-pallete .eln-color-container {
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18);
+}
+
+.eln-color-pallete div {
+  display: flex;
+  align-items: center;
+}
+
+.eln-color-pallete .eln-color-grade {
+  font-size: 16px;
+  color: #777;
+  margin-left: 10px;
+}
+
+.eln-color-pallete .eln-color-hex {
+  font-size: 16px;
+  color: #777;
+}
+
+/* --------- Color Card --------- */
+
+.eln-card.eln-card-color {
+  padding: 15px;
+}
+
+.eln-card.eln-card-color .eln-card-header {
+  padding: 0;
+}
+
+.eln-card.eln-card-color .eln-card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  border-radius: 5px;
+}
+
+.eln-card.eln-card-color .eln-card-body p {
+  font-size: 20px;
+  color: white;
   font-weight: bold;
 }
 
@@ -525,14 +572,17 @@ ol {
   margin-bottom: 30px;
   border-radius: 5px;
   min-width: 33%;
+  padding: 15px;
 }
 
 .eln-card .eln-card-header {
-  padding: 10px;
+  padding: 0;
 }
 
 .eln-card .eln-card-header h2 {
   font-size: 20px;
   font-weight: 300;
   color: #555;
+  margin: 0;
+  margin-bottom: 15px;
 }
