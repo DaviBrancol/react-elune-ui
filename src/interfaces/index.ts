@@ -46,3 +46,11 @@ export interface IColorPallete {
   hex: string
   whiteLabel: boolean
 }
+
+export interface ICardNumber {
+  version: number
+  title: string
+  icon: string
+  value: string
+  gradient?: string
+}

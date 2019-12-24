@@ -7,23 +7,41 @@ export const PageDashboard: FunctionComponent<any> = ({ ...props }) => {
       <Col lg={12}>
         <PageHeader title="Sales" list={['Dashboard', 'Sales']} />
         <Row>
-          <Col lg={4}>
-            <CardNumber title="Prospects" icon="fa fa-users" value="200" />
+          <Col lg={3}>
+            <CardNumber
+              version={1}
+              title="Clients"
+              icon="fa fa-users"
+              value="200"
+              gradient="primary-light"
+            />
           </Col>
-          <Col lg={4}>
-            <CardSimple title="Simple Card">
-              <p>Conteúdo</p>
-            </CardSimple>
+          <Col lg={3}>
+            <CardNumber
+              version={1}
+              title="Projects"
+              icon="fa fa-pencil-ruler"
+              value="200"
+              gradient="secondary-light"
+            />
           </Col>
-          <Col lg={4}>
-            <CardSimple title="Simple Card">
-              <p>Conteúdo</p>
-            </CardSimple>
+          <Col lg={3}>
+            <CardNumber
+              version={1}
+              title="Notifications"
+              icon="fa fa-bell"
+              value="40"
+              gradient="warning-light"
+            />
           </Col>
-          <Col lg={4}>
-            <CardSimple title="Simple Card">
-              <p>Conteúdo</p>
-            </CardSimple>
+          <Col lg={3}>
+            <CardNumber
+              version={1}
+              title="Emails"
+              icon="fa fa-envelope"
+              value="200"
+              gradient="danger-light"
+            />
           </Col>
         </Row>
       </Col>

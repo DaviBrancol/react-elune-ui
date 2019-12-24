@@ -47,3 +47,21 @@ body {
 .eln-header {
   background-color: #5977ac;
 }
+
+/* -------- Card Theme ------- */
+
+.eln-card.grd-primary-light {
+  background-image: linear-gradient(135deg, #b35bb7, #db83d7);
+}
+
+.eln-card.grd-secondary-light {
+  background-image: linear-gradient(135deg, #82a0cd, #a3c0e6);
+}
+
+.eln-card.grd-warning-light {
+  background-image: linear-gradient(135deg, #f8be3e, #f49f00);
+}
+
+.eln-card.grd-danger-light {
+  background-image: linear-gradient(135deg, #ea6d59, #dd3127);
+}
