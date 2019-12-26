@@ -12,10 +12,32 @@ const menu: Array<IMenu> = [
     path: '/'
   },
   {
-    title: 'Grid',
+    title: 'Style Guide',
     icon: 'fa fa-fw fa-th-large',
-    path: '/grid'
+    children: [
+      {
+        title: 'Grid System',
+        path: '/style/grid'
+      },
+      {
+        title: 'Color Pallete',
+        path: '/style/colors'
+      },
+      {
+        title: 'Typography',
+        path: '/style/typography'
+      },
+      {
+        title: 'Icons',
+        path: '/style/icons'
+      },
+      {
+        title: 'Shapes',
+        path: '/style/shapes'
+      }
+    ]
   },
+
   {
     title: 'Components',
     icon: 'fa fa-fw fa-folder',
