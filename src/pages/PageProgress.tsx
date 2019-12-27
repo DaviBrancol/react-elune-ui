@@ -26,7 +26,7 @@ export const PageProgress: FunctionComponent<any> = ({ ...props }) => {
               <Progress progress={progress} completion striped animated />
               <div style={{ display: 'flex' }}>
                 <button className="eln-button" onClick={() => setProgress(0)}>
-                  Resetar
+                  Reset
                 </button>
                 <button className="eln-button" onClick={() => setProgress(1)}>
                   Complete
@@ -35,13 +35,13 @@ export const PageProgress: FunctionComponent<any> = ({ ...props }) => {
                   className="eln-button"
                   onClick={() => setProgress(progress - 0.1)}
                 >
-                  Diminuir
+                  Decrement
                 </button>
                 <button
                   className="eln-button"
                   onClick={() => setProgress(progress + 0.1)}
                 >
-                  Aumentar
+                  Increment
                 </button>
               </div>
             </CardSimple>
@@ -50,21 +50,21 @@ export const PageProgress: FunctionComponent<any> = ({ ...props }) => {
         <TextHeader title="Custom Styles" />
         <Row>
           <Col lg={4}>
-            <CardSimple title="Linear Bar">
+            <CardSimple title="Linear">
               <Progress progress={0} />
               <Progress progress={0.5} />
               <Progress progress={1} />
             </CardSimple>
           </Col>
           <Col lg={4}>
-            <CardSimple title="Striped Bar">
+            <CardSimple title="Striped">
               <Progress progress={0} striped />
               <Progress progress={0.5} striped />
               <Progress progress={1} striped />
             </CardSimple>
           </Col>
           <Col lg={4}>
-            <CardSimple title="Animated Striped Bar">
+            <CardSimple title="Striped Animated">
               <Progress progress={0} striped animated />
               <Progress progress={0.5} striped animated />
               <Progress progress={1} striped animated />
@@ -74,7 +74,7 @@ export const PageProgress: FunctionComponent<any> = ({ ...props }) => {
         <TextHeader title="Custom Colors" />
         <Row>
           <Col lg={3}>
-            <CardSimple title="Secondary Bar">
+            <CardSimple title="Secondary">
               <Progress progress={0.5} color={Colors.secondary} />
               <Progress progress={0.5} color={Colors.secondary} striped />
               <Progress
@@ -86,7 +86,7 @@ export const PageProgress: FunctionComponent<any> = ({ ...props }) => {
             </CardSimple>
           </Col>
           <Col lg={3}>
-            <CardSimple title="Success Bar">
+            <CardSimple title="Success">
               <Progress progress={0.5} color={Colors.success} />
               <Progress progress={0.5} color={Colors.success} striped />
               <Progress
@@ -98,7 +98,7 @@ export const PageProgress: FunctionComponent<any> = ({ ...props }) => {
             </CardSimple>
           </Col>
           <Col lg={3}>
-            <CardSimple title="Warning Bar">
+            <CardSimple title="Warning">
               <Progress progress={0.5} color={Colors.warning} />
               <Progress progress={0.5} color={Colors.warning} striped />
               <Progress
@@ -110,7 +110,7 @@ export const PageProgress: FunctionComponent<any> = ({ ...props }) => {
             </CardSimple>
           </Col>
           <Col lg={3}>
-            <CardSimple title="Danger Bar">
+            <CardSimple title="Danger">
               <Progress progress={0.5} color={Colors.danger} />
               <Progress progress={0.5} color={Colors.danger} striped />
               <Progress progress={0.5} color={Colors.danger} striped animated />
@@ -120,18 +120,18 @@ export const PageProgress: FunctionComponent<any> = ({ ...props }) => {
         <TextHeader title="Custom Sizes" />
         <Row>
           <Col lg={4}>
-            <CardSimple title="Small Bar">
-              <Progress progress={1} stroke={10} />
+            <CardSimple title="Small">
+              <Progress progress={1} stroke={10} color={Colors.danger} />
             </CardSimple>
           </Col>
           <Col lg={4}>
-            <CardSimple title="Normal Bar">
-              <Progress progress={1} stroke={20} />
+            <CardSimple title="Normal">
+              <Progress progress={1} stroke={20} color={Colors.success} />
             </CardSimple>
           </Col>
           <Col lg={4}>
-            <CardSimple title="Tall Bar">
-              <Progress progress={1} stroke={30} />
+            <CardSimple title="Big">
+              <Progress progress={1} stroke={30} color={Colors.danger} />
             </CardSimple>
           </Col>
         </Row>
