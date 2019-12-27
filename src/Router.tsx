@@ -2,7 +2,12 @@ import React from 'react'
 import { Switch, Route, BrowserRouter } from 'react-router-dom'
 import { SidebarProvider } from './context'
 
-import { PageDashboard, PageBreadcrumb, PageCardSimple } from './pages'
+import {
+  PageDashboard,
+  PageBreadcrumb,
+  PageCardSimple,
+  PageProgress
+} from './pages'
 
 // Style Guide
 import {
@@ -36,6 +41,7 @@ const Routes = () => (
           path="/components/cards/simple"
           component={PageCardSimple}
         />
+        <Layout exact path="/components/progress" component={PageProgress} />
         <Route component={<div>Nothing Here for 404</div>} />
       </Switch>
     </BrowserRouter>

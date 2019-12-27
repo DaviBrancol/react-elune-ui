@@ -21,6 +21,7 @@ export interface INavItem {
 
 export interface ICardSimple {
   title: string
+  style?: Object
 }
 
 export interface IColorCard {
@@ -53,4 +54,29 @@ export interface ICardNumber {
   icon: string
   value: string
   gradient?: string
+}
+
+{
+  /* Components */
+}
+
+export enum EUIColorType {
+  primary = '#DB83D7',
+  secondary = '#A3C0E6',
+  info = '#5CE7D6',
+  success = '#66DC74',
+  warning = '#FBD164',
+  danger = '#F4967B'
+}
+
+export interface IProgressBar {
+  stroke?: number
+  color?: EUIColorType
+  className?: string
+  style?: Object
+  progress: number
+  striped?: boolean
+  position?: 'vertical' | 'horizontal'
+  animated?: boolean
+  completion?: boolean
 }
