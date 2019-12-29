@@ -54,6 +54,10 @@ const menu: Array<IMenu> = [
       {
         title: 'Breadcrumb',
         path: '/components/breadcrumbs'
+      },
+      {
+        title: 'Progress',
+        path: '/components/progress'
       }
     ]
   },
