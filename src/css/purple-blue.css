@@ -59,9 +59,13 @@ body {
 }
 
 .eln-card.grd-warning-light {
-  background-image: linear-gradient(135deg, #f8be3e, #f49f00);
+  background-image: linear-gradient(135deg, #f49f00, #f8be3e);
 }
 
 .eln-card.grd-danger-light {
-  background-image: linear-gradient(135deg, #ea6d59, #dd3127);
+  background-image: linear-gradient(135deg, #dd3127, #ea6d59);
+}
+
+.eln-card.grd-success-light {
+  background-image: linear-gradient(135deg, #3dba58, #66dc74);
 }
