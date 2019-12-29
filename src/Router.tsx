@@ -7,7 +7,8 @@ import {
   PageBreadcrumb,
   PageCardSimple,
   PageButtons,
-  PageProgress
+  PageProgress,
+  PageCharts
 } from './pages'
 
 // Style Guide
@@ -31,7 +32,7 @@ const Routes = () => (
         <Layout exact path="/style/colors" component={PageColorPallete} />
         <Layout exact path="/style/icons" component={PageIcons} />
         <Layout exact path="/style/shapes" component={PageShapes} />
-        {/* Components*/}
+        {/* Components */}
         <Layout
           exact
           path="/components/breadcrumbs"
@@ -44,6 +45,8 @@ const Routes = () => (
         />
         <Layout exact path="/components/progress" component={PageProgress} />
         <Layout exact path="/components/buttons" component={PageButtons} />
+        {/* Charts */}
+        <Layout exact path="/charts" component={PageCharts} />
         <Route component={<div>Nothing Here for 404</div>} />
       </Switch>
     </BrowserRouter>

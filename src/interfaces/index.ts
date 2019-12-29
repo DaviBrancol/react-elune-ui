@@ -110,3 +110,10 @@ export interface IButton {
   size?: 'default' | 'small' | 'large'
   labelColor?: 'light' | 'dark'
 }
+
+export interface IChart {
+  data: Object
+  options?: Object
+  width?: number
+  height?: number
+}

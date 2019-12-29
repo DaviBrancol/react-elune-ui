@@ -90,6 +90,11 @@ const menu: Array<IMenu> = [
     title: 'Forms',
     icon: 'fa fa-fw fa-edit',
     path: '/forms'
+  },
+  {
+    title: 'Charts',
+    icon: 'fa fa-fw fa-chart-bar',
+    path: '/charts'
   }
 ]
 
