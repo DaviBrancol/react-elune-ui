@@ -1,6 +1,19 @@
 import React, { FunctionComponent } from 'react'
-import { PageHeader, CardSimple, CardNumber, Col, Row } from '../components'
-import { salesDashboard } from '../demo/dashboard/main'
+import {
+  PageHeader,
+  CardSimple,
+  CardNumber,
+  Col,
+  Row,
+  WidgetAdworks,
+  WidgetTeam
+} from '../components'
+import {
+  salesDashboard,
+  teamActivity,
+  adworks,
+  teamMembers
+} from '../demo/dashboard/main'
 import { Line } from 'react-chartjs-2'
 
 export const PageDashboard: FunctionComponent<any> = ({ ...props }) => {
@@ -48,7 +61,7 @@ export const PageDashboard: FunctionComponent<any> = ({ ...props }) => {
         </Row>
         <Row>
           <Col lg={8}>
-            <CardSimple title="Sales Report">
+            <CardSimple title="Monthly Report">
               <Line
                 data={salesDashboard.data}
                 options={salesDashboard.options}
@@ -57,8 +70,20 @@ export const PageDashboard: FunctionComponent<any> = ({ ...props }) => {
             </CardSimple>
           </Col>
           <Col lg={4}>
-            <CardSimple title="Bar Chart">
-              <p>xxx</p>
+            <CardSimple title="Adworks Progress">
+              <WidgetAdworks adworks={adworks} />
+            </CardSimple>
+          </Col>
+        </Row>
+        <Row>
+          <Col lg={4}>
+            <CardSimple title="Current Team">
+              <WidgetTeam members={teamMembers} />
+            </CardSimple>
+          </Col>
+          <Col lg={8}>
+            <CardSimple title="Current Team">
+              <WidgetTeam members={teamMembers} />
             </CardSimple>
           </Col>
         </Row>

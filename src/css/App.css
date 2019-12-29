@@ -29,6 +29,10 @@
       CardNumber
     Progress
   Chart
+  Widgets
+    WidgetAdworks
+    WidgetTeam
+    WidgetTeamActivity
 
 */
 
@@ -44,6 +48,12 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   background-color: #dedede;
+}
+
+p,
+th,
+td {
+  font-family: 'Rubik', sans-serif;
 }
 
 h1,
@@ -738,3 +748,121 @@ ol {
 }
 
 /* ------- Chart Override -------- */
+
+/* ------- Widgets ------ */
+
+/* ------- WidgetAdworks ------ */
+
+.eln-widget-adworks {
+  width: 100%;
+}
+
+.eln-widget-adworks th {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 300;
+  color: #555;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.15);
+  padding-right: 15px;
+}
+
+.eln-widget-adworks .eln-widget-adworks-label {
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.eln-widget-adworks tr > td:first-child {
+  width: 5%;
+  padding-right: 10px;
+}
+
+.eln-widget-adworks td {
+  padding: 20px 30px 20px 0;
+  font-size: 14px;
+  font-weight: 300;
+  color: #333;
+}
+
+.eln-widget-adworks td i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+/* ------- WidgetTeam ------ */
+
+.eln-widget-team {
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.eln-widget-team > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 16.66667%;
+  margin-top: 10px;
+}
+
+.eln-widget-team > div img {
+  width: 120px;
+  height: 120px;
+  border-radius: 68px;
+  margin-bottom: 15px;
+  background-color: #f2f2f2;
+}
+
+.eln-widget-team .eln-widget-team-name {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
+  color: #333;
+}
+
+.eln-widget-team .eln-widget-team-job {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* ------- WidgetTeamActivity ------- */
+
+.eln-widget-team-activity {
+  padding: 0;
+}
+
+.eln-widget-team-activity > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.eln-widget-team-activity > div > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.eln-widget-team-activity > div img {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+}
+
+.eln-widget-team-activity div p {
+  margin: 0;
+  margin-left: 15px;
+  font-size: 14px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  color: #777;
+}

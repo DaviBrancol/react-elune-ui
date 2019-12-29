@@ -61,3 +61,112 @@ export const salesDashboard: IChart = {
   },
   height: 120
 }
+
+export const teamActivity = [
+  {
+    member_photo: '/main_photo.jpg',
+    activity: 'Kayle added 10 prospects to the list',
+    time: '5 hours ago'
+  },
+  {
+    member_photo: '/main_photo.jpg',
+    activity: 'Kayle added 10 prospects to the list',
+    time: '5 hours ago'
+  },
+  {
+    member_photo: '/main_photo.jpg',
+    activity: 'Kayle added 10 prospects to the list',
+    time: '5 hours ago'
+  },
+  {
+    member_photo: '/main_photo.jpg',
+    activity: 'Kayle added 10 prospects to the list',
+    time: '5 hours ago'
+  },
+  {
+    member_photo: '/main_photo.jpg',
+    activity: 'Kayle added 10 prospects to the list',
+    time: '5 hours ago'
+  }
+]
+
+export const teamMembers = [
+  {
+    member_photo: '/team_0.png',
+    name: 'Henrick',
+    job: 'Prospect Hunter'
+  },
+  {
+    member_photo: '/team_1.png',
+    name: 'Emily',
+    job: 'Leads Advisor'
+  },
+  {
+    member_photo: '/team_2.png',
+    name: 'David',
+    job: 'Sales Closer'
+  },
+  {
+    member_photo: '/team_3.png',
+    name: 'Carl',
+    job: 'Sales Closer'
+  },
+  {
+    member_photo: '/team_4.png',
+    name: 'John',
+    job: 'Customer Success'
+  },
+  {
+    member_photo: '/team_5.png',
+    name: 'Kayle',
+    job: 'Refunds Dealer'
+  }
+]
+
+export const adworks = [
+  {
+    icon: 'fab fa-facebook-f',
+    iconBackground: '#5C6BC0',
+    source: 'Facebook',
+    spent: '$100',
+    prospects: 120,
+    leads: 30,
+    sellings: 10
+  },
+  {
+    icon: 'fab fa-instagram',
+    iconBackground: '#8D6E63',
+    source: 'Instagram',
+    spent: '$579',
+    prospects: 100,
+    leads: 40,
+    sellings: 15
+  },
+  {
+    icon: 'fab fa-youtube',
+    iconBackground: '#D50000',
+    source: 'Youtube',
+    spent: '$579',
+    prospects: 80,
+    leads: 10,
+    sellings: 5
+  },
+  {
+    icon: 'fa fa-phone',
+    iconBackground: Colors.primary,
+    source: 'Outbound',
+    spent: '$579',
+    prospects: 100,
+    leads: 40,
+    sellings: 10
+  },
+  {
+    icon: 'fa fa-phone',
+    iconBackground: Colors.primary,
+    source: 'Outbound',
+    spent: '$579',
+    prospects: 100,
+    leads: 40,
+    sellings: 10
+  }
+]
