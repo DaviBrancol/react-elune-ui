@@ -58,6 +58,10 @@ const menu: Array<IMenu> = [
       {
         title: 'Progress',
         path: '/components/progress'
+      },
+      {
+        title: 'Buttons',
+        path: '/components/buttons'
       }
     ]
   },

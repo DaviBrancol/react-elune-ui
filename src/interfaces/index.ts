@@ -62,11 +62,28 @@ export interface ICardNumber {
 
 export enum EUIColorType {
   primary = '#DB83D7',
+  primaryLight = '#F3B2EB',
+  primaryHeavy = '#B35BB7',
+  // Secondary
   secondary = '#A3C0E6',
+  secondaryLight = '#C7DDF6',
+  secondaryHeavy = '#82A0CD',
+  // Info
   info = '#5CE7D6',
+  infoLight = '#94F7E2',
+  infoHeavy = '#33CFC9',
+  // Success
   success = '#66DC74',
+  successLight = '#9CF39E',
+  successHeavy = '#3dBA58',
+  // Warning
   warning = '#FBD164',
-  danger = '#F4967B'
+  warningLight = '#FDE598',
+  warningHeavy = '#F8BE3E',
+  // Danger
+  danger = '#F4967B',
+  dangerLight = '#FBC2A8',
+  dangerHeavy = '#EA6D59'
 }
 
 export interface IProgressBar {
@@ -79,4 +96,17 @@ export interface IProgressBar {
   position?: 'vertical' | 'horizontal'
   animated?: boolean
   completion?: boolean
+}
+
+export interface IButton {
+  color?: EUIColorType
+  className?: string
+  style?: Object
+  title?: string
+  icon?: string
+  onClick: () => void
+  rounded?: boolean
+  border?: 'default' | 'circular' | 'square'
+  size?: 'default' | 'small' | 'large'
+  labelColor?: 'light' | 'dark'
 }

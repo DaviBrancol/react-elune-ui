@@ -56,6 +56,12 @@ a {
   margin: 0;
 }
 
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 div,
 ul,
 ol {
@@ -567,9 +573,10 @@ ol {
   color: #555;
 }
 
-/* -------- Buttons -------- */
+/* -------- Button -------- */
 
 .eln-button {
+  white-space: nowrap;
   margin-right: 15px;
   border: 0;
   padding: 10px;
@@ -577,6 +584,49 @@ ol {
   border-radius: 5px;
   color: white;
   font-weight: bold;
+  margin-bottom: 15px;
+  opacity: 1;
+}
+
+.eln-button.eln-button-circular {
+  border-radius: 20px;
+}
+
+.eln-button.eln-button-square {
+  border-radius: 0;
+}
+
+.eln-button.eln-button-large {
+  font-size: 18px;
+  padding: 15px;
+}
+
+.eln-button.eln-button-small {
+  font-size: 14px;
+}
+
+.eln-button.eln-button-icon {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+}
+
+.eln-button.eln-button-icon.eln-button-large {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.eln-button.eln-button-icon.eln-button-small {
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+}
+
+.eln-button.eln-button-icon.eln-button-small {
+  width: 30px;
+  height: 30px;
+  font-size: 10px;
 }
 
 /* ---------------------------------

@@ -6,6 +6,7 @@ import {
   PageDashboard,
   PageBreadcrumb,
   PageCardSimple,
+  PageButtons,
   PageProgress
 } from './pages'
 
@@ -42,6 +43,7 @@ const Routes = () => (
           component={PageCardSimple}
         />
         <Layout exact path="/components/progress" component={PageProgress} />
+        <Layout exact path="/components/buttons" component={PageButtons} />
         <Route component={<div>Nothing Here for 404</div>} />
       </Switch>
     </BrowserRouter>
