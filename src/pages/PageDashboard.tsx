@@ -60,7 +60,7 @@ export const PageDashboard: FunctionComponent<any> = ({ ...props }) => {
           </Col>
         </Row>
         <Row>
-          <Col lg={8}>
+          <Col lg={7}>
             <CardSimple title="Monthly Report">
               <Line
                 data={salesDashboard.data}
@@ -69,18 +69,13 @@ export const PageDashboard: FunctionComponent<any> = ({ ...props }) => {
               />
             </CardSimple>
           </Col>
-          <Col lg={4}>
+          <Col lg={5}>
             <CardSimple title="Adworks Progress">
               <WidgetAdworks adworks={adworks} />
             </CardSimple>
           </Col>
         </Row>
         <Row>
-          <Col lg={4}>
-            <CardSimple title="Current Team">
-              <WidgetTeam members={teamMembers} />
-            </CardSimple>
-          </Col>
           <Col lg={8}>
             <CardSimple title="Current Team">
               <WidgetTeam members={teamMembers} />

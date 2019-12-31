@@ -59,7 +59,7 @@ export const salesDashboard: IChart = {
       ]
     }
   },
-  height: 120
+  height: 165
 }
 
 export const teamActivity = [
