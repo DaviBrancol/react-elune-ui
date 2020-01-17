@@ -4,14 +4,19 @@ import { ICardSimple } from '../interfaces'
 export const CardSimple: FunctionComponent<ICardSimple> = ({
   title,
   style,
+  bodyStyle,
   children
 }) => {
   return (
     <div className="eln-card" style={style}>
-      <div className="eln-card-header">
-        <h2>{title}</h2>
+      {title && (
+        <div className="eln-card-header">
+          <h2>{title}</h2>
+        </div>
+      )}
+      <div className="eln-card-body" style={bodyStyle}>
+        {children}
       </div>
-      <div className="eln-card-body">{children}</div>
     </div>
   )
 }

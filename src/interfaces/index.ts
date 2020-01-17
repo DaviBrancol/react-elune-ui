@@ -21,8 +21,9 @@ export interface INavItem {
 }
 
 export interface ICardSimple {
-  title: string
+  title?: string
   style?: Object
+  bodyStyle?: Object
 }
 
 export interface IColorCard {

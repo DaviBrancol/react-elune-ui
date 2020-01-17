@@ -550,6 +550,11 @@ ol {
 
 /* --------- 4, PageHeader -------- */
 
+.eln-body .eln-pageheader {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 .eln-pageheader {
   display: flex;
   justify-content: space-between;
