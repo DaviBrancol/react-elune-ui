@@ -8,6 +8,7 @@ export interface IGridCol {
   md?: number
   lg?: number
   xl?: number
+  style?: Object
 }
 
 export interface INavItem {
@@ -83,7 +84,12 @@ export enum EUIColorType {
   // Danger
   danger = '#F4967B',
   dangerLight = '#FBC2A8',
-  dangerHeavy = '#EA6D59'
+  dangerHeavy = '#EA6D59',
+  // White
+  white = '#FFF',
+  light = '#DDD',
+  dark = '#222',
+  black = '#000'
 }
 
 export interface IProgressBar {
@@ -96,6 +102,15 @@ export interface IProgressBar {
   position?: 'vertical' | 'horizontal'
   animated?: boolean
   completion?: boolean
+}
+
+export interface IAvatar {
+  name?: string
+  color?: EUIColorType
+  image?: string
+  className?: string
+  style?: string
+  size?: 'default' | 'extralarge' | 'large' | 'small' | 'extrasmall'
 }
 
 export interface IButton {

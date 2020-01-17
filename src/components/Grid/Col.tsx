@@ -7,13 +7,15 @@ export const Col: FunctionComponent<IGridCol> = ({
   md,
   lg,
   xl,
-  children
+  children,
+  style
 }) => {
   return (
     <div
       className={`col-${xs || 12}${sm ? ` col-sm-${sm}` : ''}${
         md ? ` col-md-${md}` : ''
       }${lg ? ` col-lg-${lg}` : ''}${xl ? ` col-xl-${xl}` : ''}`}
+      style={style}
     >
       {children}
     </div>

@@ -43,6 +43,18 @@ const menu: Array<IMenu> = [
     icon: 'fa fa-fw fa-folder',
     children: [
       {
+        title: 'Avatars',
+        path: '/components/avatars'
+      },
+      {
+        title: 'Breadcrumb',
+        path: '/components/breadcrumbs'
+      },
+      {
+        title: 'Buttons',
+        path: '/components/buttons'
+      },
+      {
         title: 'Cards',
         children: [
           {
@@ -52,16 +64,8 @@ const menu: Array<IMenu> = [
         ]
       },
       {
-        title: 'Breadcrumb',
-        path: '/components/breadcrumbs'
-      },
-      {
         title: 'Progress',
         path: '/components/progress'
-      },
-      {
-        title: 'Buttons',
-        path: '/components/buttons'
       }
     ]
   },

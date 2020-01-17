@@ -12,6 +12,7 @@ export { ColorPallete } from './ColorPallete'
 export { ColorCard } from './ColorCard'
 export { Progress } from './Progress'
 export { Button } from './Button'
+export { Avatar } from './Avatar'
 // Widgets Export
 export { WidgetTeamActivity } from './Widget/WidgetTeamActivity'
 export { WidgetTeam } from './Widget/WidgetTeam'
