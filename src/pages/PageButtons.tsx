@@ -43,7 +43,7 @@ export const PageButtons: FunctionComponent<any> = ({ ...props }) => {
             </CardSimple>
           </Col>
           <Col lg={6}>
-            <CardSimple title="Heavy">
+            <CardSimple title="Highlighted">
               <Button
                 onClick={() => {}}
                 title="primary"

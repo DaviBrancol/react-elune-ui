@@ -590,6 +590,46 @@ ol {
   color: #555;
 }
 
+/* -------- Alert -------- */
+
+.eln-card-body .eln-alert {
+  margin-bottom: 15px;
+}
+
+.eln-alert {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.eln-alert.eln-alert-with-icon {
+  padding: 0 20px 0 0;
+}
+
+.eln-alert .eln-alert-title {
+  display: flex;
+  align-items: center;
+}
+
+.eln-alert .eln-alert-title i {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-right: 15px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+}
+
+.eln-alert .close-icon {
+  cursor: pointer;
+}
+
 /* -------- Avatar -------- */
 
 .eln-avatar {

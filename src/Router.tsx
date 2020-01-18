@@ -3,6 +3,8 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom'
 import { SidebarProvider } from './context'
 
 import {
+  PageAlerts,
+  PageAvatars,
   PageDashboard,
   PageBreadcrumb,
   PageCardSimple,
@@ -17,8 +19,7 @@ import {
   PageTypography,
   PageColorPallete,
   PageShapes,
-  PageIcons,
-  PageAvatars
+  PageIcons
 } from './pages'
 import Layout from './layout/Layout'
 
@@ -34,6 +35,7 @@ const Routes = () => (
         <Layout exact path="/style/icons" component={PageIcons} />
         <Layout exact path="/style/shapes" component={PageShapes} />
         {/* Components */}
+        <Layout exact path="/components/alerts" component={PageAlerts} />
         <Layout exact path="/components/avatars" component={PageAvatars} />
         <Layout
           exact

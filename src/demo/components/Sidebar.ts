@@ -43,6 +43,10 @@ const menu: Array<IMenu> = [
     icon: 'fa fa-fw fa-folder',
     children: [
       {
+        title: 'Alerts',
+        path: '/components/alerts'
+      },
+      {
         title: 'Avatars',
         path: '/components/avatars'
       },
