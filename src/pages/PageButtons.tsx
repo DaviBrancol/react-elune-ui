@@ -20,57 +20,77 @@ export const PageButtons: FunctionComponent<any> = ({ ...props }) => {
             <CardSimple title="Light">
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="primary"
                 color={Colors.primary}
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="secondary"
                 color={Colors.secondary}
               />
-              <Button onClick={() => {}} title="info" color={Colors.info} />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
+                title="info"
+                color={Colors.info}
+              />
+              <Button
+                onClick={() => {}}
+                className="eln-button-margin"
                 title="success"
                 color={Colors.success}
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="warning"
                 color={Colors.warning}
               />
-              <Button onClick={() => {}} title="danger" color={Colors.danger} />
+              <Button
+                onClick={() => {}}
+                className="eln-button-margin"
+                title="danger"
+                color={Colors.danger}
+              />
             </CardSimple>
           </Col>
           <Col lg={6}>
             <CardSimple title="Highlighted">
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="primary"
                 color={Colors.primaryHeavy}
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="secondary"
                 color={Colors.secondaryHeavy}
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="info"
                 color={Colors.infoHeavy}
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="success"
                 color={Colors.successHeavy}
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="warning"
                 color={Colors.warningHeavy}
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="danger"
                 color={Colors.dangerHeavy}
               />
@@ -84,35 +104,41 @@ export const PageButtons: FunctionComponent<any> = ({ ...props }) => {
               <Button
                 onClick={() => {}}
                 title="primary"
+                className="eln-button-margin"
                 color={Colors.primary}
                 border="square"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="secondary"
                 color={Colors.secondary}
                 border="square"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="info"
                 color={Colors.info}
                 border="square"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="success"
                 color={Colors.success}
                 border="square"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="warning"
                 color={Colors.warning}
                 border="square"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="danger"
                 color={Colors.danger}
                 border="square"
@@ -123,36 +149,42 @@ export const PageButtons: FunctionComponent<any> = ({ ...props }) => {
             <CardSimple title="Circular Border">
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="primary"
                 color={Colors.primary}
                 border="circular"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="secondary"
                 color={Colors.secondary}
                 border="circular"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="info"
                 color={Colors.info}
                 border="circular"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="success"
                 color={Colors.success}
                 border="circular"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="warning"
                 color={Colors.warning}
                 border="circular"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="danger"
                 color={Colors.danger}
                 border="circular"
@@ -166,36 +198,42 @@ export const PageButtons: FunctionComponent<any> = ({ ...props }) => {
             <CardSimple title="Small">
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="primary"
                 color={Colors.primary}
                 size="small"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="secondary"
                 color={Colors.secondary}
                 size="small"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="info"
                 color={Colors.info}
                 size="small"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="success"
                 color={Colors.success}
                 size="small"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="warning"
                 color={Colors.warning}
                 size="small"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="danger"
                 color={Colors.danger}
                 size="small"
@@ -206,36 +244,42 @@ export const PageButtons: FunctionComponent<any> = ({ ...props }) => {
             <CardSimple title="Large">
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="primary"
                 color={Colors.primary}
                 size="large"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="secondary"
                 color={Colors.secondary}
                 size="large"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="info"
                 color={Colors.info}
                 size="large"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="success"
                 color={Colors.success}
                 size="large"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="warning"
                 color={Colors.warning}
                 size="large"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 title="danger"
                 color={Colors.danger}
                 size="large"
@@ -249,31 +293,37 @@ export const PageButtons: FunctionComponent<any> = ({ ...props }) => {
             <CardSimple title="Light">
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-play"
                 color={Colors.primary}
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-pause"
                 color={Colors.secondary}
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-question"
                 color={Colors.info}
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-check"
                 color={Colors.success}
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-exclamation"
                 color={Colors.warning}
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-times"
                 color={Colors.danger}
               />
@@ -283,26 +333,31 @@ export const PageButtons: FunctionComponent<any> = ({ ...props }) => {
             <CardSimple title="Heavy">
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-play"
                 color={Colors.primaryHeavy}
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-pause"
                 color={Colors.secondaryHeavy}
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-question"
                 color={Colors.infoHeavy}
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-check"
                 color={Colors.successHeavy}
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-exclamation"
                 color={Colors.warningHeavy}
               />
@@ -320,36 +375,42 @@ export const PageButtons: FunctionComponent<any> = ({ ...props }) => {
             <CardSimple title="Squared Border">
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-play"
                 color={Colors.primary}
                 border="square"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-pause"
                 color={Colors.secondary}
                 border="square"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-question"
                 color={Colors.info}
                 border="square"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-check"
                 color={Colors.success}
                 border="square"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-exclamation"
                 color={Colors.warning}
                 border="square"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-times"
                 color={Colors.danger}
                 border="square"
@@ -360,36 +421,42 @@ export const PageButtons: FunctionComponent<any> = ({ ...props }) => {
             <CardSimple title="Circular Border">
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-play"
                 color={Colors.primary}
                 border="circular"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-pause"
                 color={Colors.secondary}
                 border="circular"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-question"
                 color={Colors.info}
                 border="circular"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-check"
                 color={Colors.success}
                 border="circular"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-exclamation"
                 color={Colors.warning}
                 border="circular"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-times"
                 color={Colors.danger}
                 border="circular"
@@ -403,36 +470,42 @@ export const PageButtons: FunctionComponent<any> = ({ ...props }) => {
             <CardSimple title="Small">
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-play"
                 color={Colors.primary}
                 size="small"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-pause"
                 color={Colors.secondary}
                 size="small"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-question"
                 color={Colors.info}
                 size="small"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-check"
                 color={Colors.success}
                 size="small"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-exclamation"
                 color={Colors.warning}
                 size="small"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-times"
                 color={Colors.danger}
                 size="small"
@@ -443,36 +516,42 @@ export const PageButtons: FunctionComponent<any> = ({ ...props }) => {
             <CardSimple title="Large">
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-play"
                 color={Colors.primary}
                 size="large"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-pause"
                 color={Colors.secondary}
                 size="large"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-question"
                 color={Colors.info}
                 size="large"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-check"
                 color={Colors.success}
                 size="large"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-exclamation"
                 color={Colors.warning}
                 size="large"
               />
               <Button
                 onClick={() => {}}
+                className="eln-button-margin"
                 icon="fa fa-times"
                 color={Colors.danger}
                 size="large"

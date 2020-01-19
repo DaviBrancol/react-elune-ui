@@ -28,7 +28,9 @@
     Cards
       CardSimple
       CardNumber
+    Label
     Progress
+    Table
   Chart
   Widgets
     WidgetAdworks
@@ -690,16 +692,19 @@ ol {
 
 /* -------- Button -------- */
 
+.eln-button.eln-button-margin {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
 .eln-button {
   white-space: nowrap;
-  margin-right: 15px;
   border: 0;
   padding: 10px;
   background-color: #a3c0e6;
   border-radius: 5px;
   color: white;
   font-weight: bold;
-  margin-bottom: 15px;
   opacity: 1;
 }
 
@@ -726,6 +731,14 @@ ol {
   font-size: 18px;
 }
 
+.eln-button.eln-button-icon i {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 .eln-button.eln-button-icon.eln-button-large {
   width: 50px;
   height: 50px;
@@ -735,13 +748,7 @@ ol {
 .eln-button.eln-button-icon.eln-button-small {
   width: 30px;
   height: 30px;
-  font-size: 14px;
-}
-
-.eln-button.eln-button-icon.eln-button-small {
-  width: 30px;
-  height: 30px;
-  font-size: 10px;
+  font-size: 16px;
 }
 
 /* ---------------------------------
@@ -793,6 +800,16 @@ ol {
 
 .eln-card.eln-card-number-v1 .eln-card-icon i {
   font-size: 50px;
+}
+
+/* --------- Label -------- */
+
+.eln-label {
+  color: white;
+  width: fit-content;
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 10px;
 }
 
 /* --------- Progress -------- */
@@ -851,6 +868,64 @@ ol {
   color: white;
 }
 
+/* --------- Table -------- */
+
+.eln-table {
+  width: 100%;
+}
+
+.eln-table thead th:first-child {
+  border-left: 1px solid #eee;
+}
+
+.eln-table thead th:last-child {
+  text-align: right;
+  padding-right: 15px;
+  padding-left: 0;
+}
+
+.eln-table thead th {
+  font-weight: 300;
+  font-size: 16px;
+  padding: 15px 0 15px 15px;
+  border-top: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  color: #777;
+  text-align: left;
+}
+
+.eln-table tbody tr td:first-child {
+  border-left: 1px solid #eee;
+}
+
+.eln-table tbody td {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0 15px 15px;
+  margin: 0;
+  font-weight: 300;
+  font-size: 14px;
+  color: #555;
+  text-align: left;
+  border-top: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.eln-table tbody tr:nth-child(odd) {
+  background-color: #f6f6f6;
+}
+
+.eln-table tbody td:last-child {
+  border-bottom: 0;
+}
+
+.eln-table tbody td:last-child {
+  text-align: right;
+  padding-right: 15px;
+  padding-left: 0;
+}
+
 /* ------- Chart Override -------- */
 
 /* ------- Widgets ------ */
@@ -882,7 +957,7 @@ ol {
 }
 
 .eln-widget-adworks td {
-  padding: 20px 30px 20px 0;
+  padding: 15px 30px 15px 0;
   font-size: 14px;
   font-weight: 300;
   color: #333;

@@ -17,6 +17,7 @@ export const Button: FunctionComponent<IButton> = ({
     <button
       className={classNames({
         'eln-button': true,
+        [`${className}`]: className,
         'eln-button-circular': border === 'circular',
         'eln-button-square': border === 'square',
         'eln-button-large': size === 'large',
@@ -26,7 +27,8 @@ export const Button: FunctionComponent<IButton> = ({
       onClick={onClick}
       style={{
         backgroundColor: color,
-        color: labelColor === 'dark' ? '#555' : 'white'
+        color: labelColor === 'dark' ? '#555' : 'white',
+        ...style
       }}
     >
       {icon && <i className={icon} />}

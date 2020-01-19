@@ -6,29 +6,29 @@ export const salesDashboard: IChart = {
     datasets: [
       {
         label: 'Prospects',
-        backgroundColor: Colors.primary,
-        borderColor: Colors.primary,
+        backgroundColor: Colors.primaryHeavy,
+        borderColor: Colors.primaryHeavy,
         fill: false,
         data: [120, 180, 200, 260, 300, 400]
       },
       {
         label: 'Leads',
-        backgroundColor: Colors.warning,
-        borderColor: Colors.warning,
+        backgroundColor: Colors.warningHeavy,
+        borderColor: Colors.warningHeavy,
         fill: false,
         data: [80, 110, 130, 180, 200, 270]
       },
       {
         label: 'Sellings',
-        backgroundColor: Colors.success,
-        borderColor: Colors.success,
+        backgroundColor: Colors.successHeavy,
+        borderColor: Colors.successHeavy,
         fill: false,
         data: [42, 62, 72, 102, 120, 190]
       },
       {
-        label: 'Prospects',
-        backgroundColor: Colors.danger,
-        borderColor: Colors.danger,
+        label: 'Refunds',
+        backgroundColor: Colors.dangerHeavy,
+        borderColor: Colors.dangerHeavy,
         fill: false,
         data: [24, 19, 29, 32, 38, 22]
       }
@@ -60,6 +60,71 @@ export const salesDashboard: IChart = {
     }
   },
   height: 165
+}
+
+export const refundsDashboard: IChart = {
+  data: {
+    labels: [
+      'Jan',
+      'Feb',
+      'Mar',
+      'Apr',
+      'Jun',
+      'Jul',
+      'Aug',
+      'Sep',
+      'Oct',
+      'Nov',
+      'Dec'
+    ],
+    datasets: [
+      {
+        label: 'Customers',
+        backgroundColor: Colors.successHeavy,
+        borderColor: Colors.successHeavy,
+        fill: false,
+        data: [42, 62, 72, 142, 120, 240, 150, 130, 180, 220, 150, 180]
+      },
+      {
+        label: 'Refunds',
+        backgroundColor: Colors.dangerHeavy,
+        borderColor: Colors.dangerHeavy,
+        fill: false,
+        data: [24, 19, 29, 42, 38, 22, 40, 30, 15, 40, 30, 20, 25]
+      }
+    ]
+  },
+  options: {
+    legend: {
+      display: false
+    },
+    scales: {
+      xAxes: [
+        {
+          barPercentage: 0.6,
+          gridLines: {
+            display: false
+          },
+          ticks: {
+            fontColor: 'rgba(0, 0, 0, 0.6)'
+          },
+          stacked: true
+        }
+      ],
+      yAxes: [
+        {
+          gridLines: {
+            display: false
+          },
+          ticks: {
+            display: false
+          },
+          stacked: true
+        }
+      ]
+    }
+  },
+  height: 84
 }
 
 export const teamActivity = [
@@ -128,45 +193,66 @@ export const adworks = [
     icon: 'fab fa-facebook-f',
     iconBackground: '#5C6BC0',
     source: 'Facebook',
-    spent: '$100',
+    spent: '$120',
     prospects: 120,
     leads: 30,
     sellings: 10
   },
   {
-    icon: 'fab fa-instagram',
-    iconBackground: '#8D6E63',
-    source: 'Instagram',
-    spent: '$579',
+    icon: 'fab fa-youtube',
+    iconBackground: 'red',
+    source: 'Youtube',
+    spent: '$80',
     prospects: 100,
     leads: 40,
     sellings: 15
   },
   {
-    icon: 'fab fa-youtube',
-    iconBackground: '#D50000',
-    source: 'Youtube',
-    spent: '$579',
-    prospects: 80,
-    leads: 10,
-    sellings: 5
-  },
-  {
     icon: 'fa fa-phone',
     iconBackground: Colors.primary,
-    source: 'Outbound',
-    spent: '$579',
+    source: 'Calling',
+    spent: '$30',
     prospects: 100,
     leads: 40,
     sellings: 10
+  }
+]
+
+export const prospects = [
+  {
+    name: 'Carl',
+    cellphone: '(203) 203-4934',
+    email: 'carl@email.com',
+    status: ['Prospect']
   },
   {
-    icon: 'fa fa-phone',
-    iconBackground: Colors.primary,
-    source: 'Outbound',
-    spent: '$579',
-    prospects: 100,
-    leads: 40,
-    sellings: 10
+    name: 'Jessica',
+    cellphone: '(680) 914-9593',
+    email: 'jessica@email.com',
+    status: ['Prospect']
+  },
+  {
+    name: 'Michael',
+    cellphone: '(700) 192-1495',
+    email: 'michael@email.com',
+    status: ['Lead']
+  },
+  {
+    name: 'Brenda',
+    cellphone: '(888) 194-1923',
+    email: 'brenda@email.com',
+    status: ['Lead']
+  },
+  {
+    name: 'Lindsey',
+    cellphone: '(555) 542-3456',
+    email: 'lindsey@email.com',
+    status: ['Client']
+  },
+  {
+    name: 'Axel',
+    cellphone: '(123) 123-4567',
+    email: 'axel@email.com',
+    status: ['Client', 'Refund']
   }
 ]
