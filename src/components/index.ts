@@ -16,6 +16,7 @@ export { Alert } from './Alert'
 export { Avatar } from './Avatar'
 export { Label } from './Label'
 export { Table } from './Table'
+export { Input } from './Input'
 // Widgets Export
 export { WidgetTeamActivity } from './Widget/WidgetTeamActivity'
 export { WidgetTeam } from './Widget/WidgetTeam'

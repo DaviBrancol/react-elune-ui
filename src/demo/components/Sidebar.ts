@@ -78,35 +78,35 @@ const menu: Array<IMenu> = [
     path: '/calendar'
   },
   {
-    title: 'Layouts',
-    icon: 'fa fa-fw fa-th-large',
-    children: [
-      {
-        title: 'Dashboard',
-        children: [
-          {
-            title: 'Dashboard',
-            path: '/cards/numbers'
-          }
-        ]
-      },
-      {
-        title: 'Dashboard'
-      },
-      {
-        title: 'Dashboard'
-      }
-    ]
+    title: 'Charts',
+    icon: 'fa fa-fw fa-chart-bar',
+    path: '/charts'
   },
   {
     title: 'Forms',
     icon: 'fa fa-fw fa-edit',
-    path: '/forms'
-  },
-  {
-    title: 'Charts',
-    icon: 'fa fa-fw fa-chart-bar',
-    path: '/charts'
+    children: [
+      {
+        title: 'Inputs',
+        path: '/forms/inputs'
+      },
+      {
+        title: 'Basic Forms',
+        path: '/forms/basic'
+      },
+      {
+        title: 'Advanced Forms',
+        path: '/forms/advanced'
+      },
+      {
+        title: 'Validation',
+        path: '/forms/validation'
+      },
+      {
+        title: 'Wizard',
+        path: '/forms/wizard'
+      }
+    ]
   }
 ]
 
