@@ -37,7 +37,6 @@ const menu: Array<IMenu> = [
       }
     ]
   },
-
   {
     title: 'Components',
     icon: 'fa fa-fw fa-folder',
@@ -72,6 +71,11 @@ const menu: Array<IMenu> = [
         path: '/components/progress'
       }
     ]
+  },
+  {
+    title: 'Calendar',
+    icon: 'fa fa-fw fa-calendar-alt',
+    path: '/calendar'
   },
   {
     title: 'Layouts',

@@ -21,6 +21,9 @@ import {
   PageShapes,
   PageIcons
 } from './pages'
+
+// Calendar
+import { PageCalendar } from './pages'
 import Layout from './layout/Layout'
 
 const Routes = () => (
@@ -51,6 +54,8 @@ const Routes = () => (
         <Layout exact path="/components/buttons" component={PageButtons} />
         {/* Charts */}
         <Layout exact path="/charts" component={PageCharts} />
+        {/* Calendar */}
+        <Layout exact path="/calendar" component={PageCalendar} />
         <Route component={<div>Nothing Here for 404</div>} />
       </Switch>
     </BrowserRouter>

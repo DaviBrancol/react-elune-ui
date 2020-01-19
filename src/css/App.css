@@ -5,7 +5,6 @@
 
   --- Davi Duarte Gomes - Designer / UI Developer ---
 */
-
 /* 
 
   Summary
@@ -31,6 +30,7 @@
     Label
     Progress
     Table
+  Calendar
   Chart
   Widgets
     WidgetAdworks
@@ -38,7 +38,6 @@
     WidgetTeamActivity
 
 */
-
 * {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
@@ -924,6 +923,70 @@ ol {
   text-align: right;
   padding-right: 15px;
   padding-left: 0;
+}
+
+/* ------- Calendar Override -------- */
+
+.rbc-calendar .rbc-toolbar .rbc-btn-group button {
+  color: white;
+  background-color: #db83d7;
+  border: 1px solid rgba(130, 160, 205, 0.4);
+  font-weight: bold;
+  outline: 0;
+}
+
+.rbc-calendar .rbc-toolbar .rbc-btn-group button:hover {
+  background-color: #b35bb7;
+  color: white;
+}
+
+.rbc-calendar .rbc-toolbar .rbc-btn-group .rbc-active,
+.rbc-calendar .rbc-toolbar .rbc-btn-group .rbc-active:hover {
+  background-color: #b35bb7 !important;
+  color: white !important;
+}
+
+.rbc-calendar .rbc-month-view {
+  border: 1px solid rgba(130, 160, 205, 0.4);
+}
+
+.rbc-calendar .rbc-month-view .rbc-row .rbc-header {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(130, 160, 205, 0.4);
+  border-left: 1px solid rgba(130, 160, 205, 0.4);
+}
+
+.rbc-calendar .rbc-month-view .rbc-month-row .rbc-day-bg {
+  border-bottom: 1px solid rgba(130, 160, 205, 0.4);
+  border-left: 1px solid rgba(130, 160, 205, 0.4);
+}
+
+.rbc-calendar .rbc-month-row + .rbc-month-row {
+  border-top: 0;
+}
+
+.rbc-calendar .rbc-off-range-bg {
+  background-color: #e2eefa;
+}
+
+.rbc-calendar .rbc-month-view .rbc-month-row .rbc-day-bg.rbc-today {
+  background-color: #b35bb7;
+}
+
+.rbc-calendar .rbc-month-row .rbc-row-content .rbc-row .rbc-date-cell.rbc-now {
+  color: white;
+}
+
+.rbc-calendar .rbc-month-row .rbc-row-content .rbc-row .rbc-date-cell {
+  color: rgba(219, 131, 215, 0.8);
+  font-weight: bold;
+}
+
+.rbc-calendar .rbc-month-view .rbc-row .rbc-header span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #db83d7;
 }
 
 /* ------- Chart Override -------- */
